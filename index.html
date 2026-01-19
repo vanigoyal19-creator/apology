@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memories of Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #f6e9ec, #fdf6f0);
+}
+
+/* ---------- PAGE 1 ---------- */
+#page1 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+  color: #b76e79;
+  margin: 10px 0;
+}
+
+.photo {
+   width: 300px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+img {
+  max-width: 100%;
+}
+button {
+  margin-top: 30px;
+  padding: 14px 42px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background: #b76e79;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- PAGE 2 ---------- */
+#page2 {
+  display: none;
+  padding: 80px 40px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.photos img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.letter {
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+.letter h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+.letter p {
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+
+.signature {
+  margin-top: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+  color: #b76e79;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1">
+  <img src="photo1.jpg" class="photo" alt="memory one">
+  <h1>MEMORIES OF US</h1>
+  <img src="photo2.jpg" class="photo" alt="memory two">
+  <button onclick="goNext()">Continue</button>
+</div>
+
+
+<!-- PAGE 2 -->
+<div id="page2">
+  <div class="wrapper">
+
+    <div class="photos">
+  <img src="photo3.jpg" alt="memory three">
+  <img src="photo4.jpg" alt="memory four">
+</div>
+
+
+    <div class="letter">
+      <h2>I’m Sorry, Didi</h2>
+
+      <p>
+        Dear Didi,<br><br>
+        Mujhe pata hai maine galti ki.
+        Maine aapko hurt kiya, chahe meri intention woh na ho.
+        i've done such a big blunder ki mjhe itnaaa jyadaaaa  guilt hora h 
+i cant even express i'm sorry 
+jitna apologise kru utna kam h :(
+mjhe bhoot jyada guilt hora h 
+i am really really very sorry didi
+i should not have have whatever i have done, i've realised
+i am sorry 
+      </p>
+
+      <p>
+         sach m didi hamara bond sabse alg hi h.
+kuch bhi ho jo apna pan hmare bich h vo to kahin nhi hi h
+        Aap aur Kavya mere liye bhoot important ho,
+        aur main nahi chahti ki
+        badon ke beech ke issues
+        hum bachchon ke beech doori banayein.
+i completely agree to your point....
+      </p>
+
+     <p>
+        i am really really very sorry, please forgive me 🥺
+      </p>
+
+      <div class="signature">
+        with tonnes, barrels, and titanic of Love ❤️,<br>
+        chandi devi
+        nani maa
+        Vani 
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function goNext() {
+  document.getElementById("page1").style.display = "none";
+  document.getElementById("page2").style.display = "block";
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
